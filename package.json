@@ -1,8 +1,8 @@
 {
-  "name": "my-module",
+  "name": "nuxt-toc",
   "version": "1.0.0",
-  "description": "My new Nuxt module",
-  "repository": "your-org/my-module",
+  "description": "A nuxt.js module for Table of Contents (TOC)",
+  "repository": "https://github.com/hanyujie2002/nuxt-toc",
   "license": "MIT",
   "type": "module",
   "exports": {
