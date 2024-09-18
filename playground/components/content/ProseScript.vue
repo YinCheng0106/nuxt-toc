@@ -12,6 +12,6 @@ defineProps({
     type: String,
     default: '',
   },
-});
-const isDev = import.meta.dev;
+})
+const isDev = import.meta.dev
 </script>

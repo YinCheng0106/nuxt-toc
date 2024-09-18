@@ -13,21 +13,30 @@
     </div>
 
     <div class="mx-auto my-3 space-x-5 text-3xl">
-      <NuxtLink to="https://github.com/hanyujie2002/Vardar" target="_blank">
+      <NuxtLink
+        to="https://github.com/hanyujie2002/Vardar"
+        target="_blank"
+      >
         <Icon
           name="mdi:github-face"
           class="bg-themeColor-200 transition-all hover:bg-neutral-900"
         />
       </NuxtLink>
 
-      <NuxtLink to="mailto:example@example.com" target="_blank">
+      <NuxtLink
+        to="mailto:example@example.com"
+        target="_blank"
+      >
         <Icon
           name="mdi:email"
           class="bg-themeColor-200 transition-colors hover:bg-yellow-200"
         />
       </NuxtLink>
 
-      <NuxtLink to="https://twitter.com/Twitter" target="_blank">
+      <NuxtLink
+        to="https://twitter.com/Twitter"
+        target="_blank"
+      >
         <Icon
           name="mdi:twitter"
           class="bg-themeColor-200 transition-colors hover:bg-sky-300"

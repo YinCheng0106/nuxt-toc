@@ -2,7 +2,7 @@ export default defineI18nConfig(() => ({
   legacy: false,
   locale: 'en',
   messages: {
-    en: {
+    'en': {
       about: 'About',
       blog: 'Blog',
     },
@@ -14,33 +14,33 @@ export default defineI18nConfig(() => ({
       about: '關於',
       blog: '博客',
     },
-    es: {
+    'es': {
       about: 'Acerca de',
       blog: 'Blog',
     },
-    fr: {
+    'fr': {
       about: 'À propos',
       blog: 'Blog',
     },
-    de: {
+    'de': {
       about: 'Über',
       blog: 'Blog',
     },
-    ja: {
+    'ja': {
       about: '約',
       blog: 'ブログ',
     },
-    ko: {
+    'ko': {
       about: '소개',
       blog: '블로그',
     },
-    ru: {
+    'ru': {
       about: 'О нас',
       blog: 'Блог',
     },
-    uk: {
+    'uk': {
       about: 'Про нас',
       blog: 'Блог',
     },
   },
-}));
+}))

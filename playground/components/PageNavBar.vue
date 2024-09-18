@@ -14,21 +14,21 @@
 </template>
 
 <script setup lang="ts">
-import { VueAwesomePaginate } from 'vue-awesome-paginate';
+import { VueAwesomePaginate } from 'vue-awesome-paginate'
 
-const { data: totalRecords } = await useAsyncData('totalRecords', () => queryContent('blog').count());
+const { data: totalRecords } = await useAsyncData('totalRecords', () => queryContent('blog').count())
 
-const perPage = ref(15);
+const perPage = ref(15)
 
-const route = useRoute();
+const route = useRoute()
 
-const page: (string | null | undefined) | (string | null | undefined)[] =
-  route.query.page;
+const page: (string | null | undefined) | (string | null | undefined)[]
+  = route.query.page
 
-const currentPage: globalThis.Ref<number> = ref(1);
+const currentPage: globalThis.Ref<number> = ref(1)
 
 if (!(Array.isArray(page) || page === undefined || page === null)) {
-  currentPage.value = parseInt(page);
+  currentPage.value = Number.parseInt(page)
 }
 
 const onPageChange = async (page: number) => {
@@ -37,10 +37,10 @@ const onPageChange = async (page: number) => {
     query: {
       page: page,
     },
-  });
+  })
 
-  window.scrollTo(0, 0);
-};
+  window.scrollTo(0, 0)
+}
 </script>
 
 <style>

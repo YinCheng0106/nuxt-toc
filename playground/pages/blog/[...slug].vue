@@ -12,16 +12,16 @@
 </template>
 
 <script setup>
-const { $mermaid } = useNuxtApp();
+const { $mermaid } = useNuxtApp()
 
 onMounted(async () => {
   $mermaid().initialize({
     startOnLoad: true,
     deterministicIds: true,
-  });
-  await nextTick();
-  $mermaid().init();
-});
+  })
+  await nextTick()
+  $mermaid().init()
+})
 </script>
 
 <style>

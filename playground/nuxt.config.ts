@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@nuxt/image',
     '@nuxt/eslint',
-    '@nuxtjs/i18n', 
+    '@nuxtjs/i18n',
   ],
   // myModule: {},
   devtools: { enabled: true },
@@ -81,8 +81,8 @@ export default defineNuxtConfig({
   content: {
     experimental: {
       search: {
-        indexed: true
-      }
+        indexed: true,
+      },
     },
     highlight: {
       theme: 'everforest-dark',

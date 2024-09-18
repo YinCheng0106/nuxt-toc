@@ -1,5 +1,8 @@
 <template>
-  <CodeBlock v-if="!isMermaid" v-bind="props">
+  <CodeBlock
+    v-if="!isMermaid"
+    v-bind="props"
+  >
     <slot />
   </CodeBlock>
 
@@ -34,9 +37,9 @@ const props = defineProps({
     type: String,
     default: null,
   },
-});
+})
 
-const isMermaid = ref<boolean>(props.language === 'mermaid');
+const isMermaid = ref<boolean>(props.language === 'mermaid')
 </script>
 
 <style>

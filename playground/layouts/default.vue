@@ -11,8 +11,7 @@
             :class="{ active: isAboutPage }"
             to="/about"
             @click="hideFixedMenu"
-            >{{ $t('about') }}</NuxtLink
-          >
+          >{{ $t('about') }}</NuxtLink>
         </li>
         <li class="">
           <NuxtLink
@@ -20,8 +19,7 @@
             :class="{ active: isBlogPage }"
             to="/blog"
             @click="hideFixedMenu"
-            >{{ $t('blog') }}</NuxtLink
-          >
+          >{{ $t('blog') }}</NuxtLink>
         </li>
         <li>
           <NuxtLink
@@ -47,27 +45,27 @@
               class="flex flex-auto rounded px-4 py-2 text-2xl font-extrabold transition-colors"
               to="/"
               @click="hideFixedMenu"
-              >Alex Johnson</NuxtLink
-            >
+            >Alex Johnson</NuxtLink>
           </li>
           <li class="my-auto hidden sm:list-item">
             <NuxtLink
               class="my-auto flex flex-auto rounded px-4 py-2 text-lg font-bold transition-colors hover:text-yellow-100"
               :class="{ active: isAboutPage }"
               to="/about"
-              >{{ $t('about') }}</NuxtLink
-            >
+            >{{ $t('about') }}</NuxtLink>
           </li>
           <li class="my-auto hidden sm:list-item">
             <NuxtLink
               class="flex flex-auto rounded px-4 py-2 text-lg font-bold transition-colors hover:text-yellow-100"
               :class="{ active: isBlogPage }"
               to="/blog"
-              >{{ $t('blog') }}</NuxtLink
-            >
+            >{{ $t('blog') }}</NuxtLink>
           </li>
           <li class="ml-auto hidden sm:list-item">
-            <NuxtLink target="_blank" to="/feed.xml">
+            <NuxtLink
+              target="_blank"
+              to="/feed.xml"
+            >
               <Icon
                 name="mdi:rss"
                 class="size-12 transition-colors hover:text-yellow-100"
@@ -78,7 +76,10 @@
 
         <div class="my-auto mr-2 flex sm:hidden">
           <button @click="toggleFixedMenuState">
-            <Icon :name="burgerMenuIconName" class="h-10 w-10" />
+            <Icon
+              :name="burgerMenuIconName"
+              class="h-10 w-10"
+            />
           </button>
         </div>
       </nav>
@@ -104,8 +105,7 @@
             class="ml-1 text-yellow-200 hover:underline"
             to="https://github.com/hanyujie2002/Vardar"
             target="_blank"
-            >Vardar blog template</NuxtLink
-          >
+          >Vardar blog template</NuxtLink>
         </div>
       </footer>
     </div>
@@ -113,36 +113,37 @@
 </template>
 
 <script setup lang="ts">
-const route = useRoute();
-const isFixedNavHidden = ref<boolean>(true);
-const documentElement = ref();
-const burgerMenuIconName = ref<string>('mdi:menu');
+const route = useRoute()
+const isFixedNavHidden = ref<boolean>(true)
+const documentElement = ref()
+const burgerMenuIconName = ref<string>('mdi:menu')
 
 onMounted(() => {
-  documentElement.value = document.documentElement;
-});
+  documentElement.value = document.documentElement
+})
 const isAboutPage = computed(() => {
-  return route.path.startsWith('/about');
-});
+  return route.path.startsWith('/about')
+})
 const isBlogPage = computed(() => {
-  return route.path.startsWith('/blog');
-});
+  return route.path.startsWith('/blog')
+})
 const toggleFixedMenuState = () => {
   if (isFixedNavHidden.value === true) {
-    documentElement.value.classList.add('overflow-hidden');
-    burgerMenuIconName.value = 'mdi:close';
-  } else {
-    documentElement.value.classList.remove('overflow-hidden');
-    burgerMenuIconName.value = 'mdi:menu';
+    documentElement.value.classList.add('overflow-hidden')
+    burgerMenuIconName.value = 'mdi:close'
+  }
+  else {
+    documentElement.value.classList.remove('overflow-hidden')
+    burgerMenuIconName.value = 'mdi:menu'
   }
 
-  isFixedNavHidden.value = !isFixedNavHidden.value;
-};
+  isFixedNavHidden.value = !isFixedNavHidden.value
+}
 const hideFixedMenu = () => {
-  isFixedNavHidden.value = true;
-  documentElement.value.classList.remove('overflow-hidden');
-  burgerMenuIconName.value = 'mdi:menu';
-};
+  isFixedNavHidden.value = true
+  documentElement.value.classList.remove('overflow-hidden')
+  burgerMenuIconName.value = 'mdi:menu'
+}
 </script>
 
 <style scoped>

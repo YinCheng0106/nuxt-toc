@@ -9,7 +9,7 @@
 </template>
 
 <script setup lang="ts">
-import type { PropType } from 'vue';
+import type { PropType } from 'vue'
 
 defineProps({
   href: {
@@ -29,5 +29,5 @@ defineProps({
     default: undefined,
     required: false,
   },
-});
+})
 </script>

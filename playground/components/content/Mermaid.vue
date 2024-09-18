@@ -1,15 +1,18 @@
 <template>
-  <div v-if="show" class="mermaid">
+  <div
+    v-if="show"
+    class="mermaid"
+  >
     <slot />
   </div>
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue';
+import { ref, onMounted } from 'vue'
 
-const show = ref(false);
+const show = ref(false)
 
 onMounted(async () => {
-  show.value = true;
-});
+  show.value = true
+})
 </script>

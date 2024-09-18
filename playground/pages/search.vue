@@ -1,12 +1,11 @@
 <script lang="ts" setup>
-const search  = ref<string>('')
+const search = ref<string>('')
 
 const results = ref<string[]>([])
 
 watch(search, async (newSearch: string) => {
-  results.value = await searchContent(newSearch);
+  results.value = await searchContent(newSearch)
 })
-
 </script>
 
 <template>

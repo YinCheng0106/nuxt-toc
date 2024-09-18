@@ -9,15 +9,20 @@
         :name="getIconName(language)"
         class="ml-3 text-2xl"
       />
-      <span v-if="filename" class="ml-3 text-themeColor-200">{{
+      <span
+        v-if="filename"
+        class="ml-3 text-themeColor-200"
+      >{{
         filename
       }}</span>
       <button
         :class="`ml-auto mr-3 flex gap-1 rounded p-1 transition-all hover:backdrop-brightness-125 ${isCopyButtonActive ? 'backdrop-brightness-125' : ''}`"
         @click="copyButtonHandleClick"
       >
-        <span v-show="isCopyButtonActive">Copied</span
-        ><Icon :name="copyButtonIconName" class="text-2xl" />
+        <span v-show="isCopyButtonActive">Copied</span><Icon
+          :name="copyButtonIconName"
+          class="text-2xl"
+        />
       </button>
     </div>
     <pre
@@ -56,25 +61,25 @@ const props = defineProps({
     type: String,
     default: null,
   },
-});
+})
 
-const copyButtonIconName = ref<string>('tabler:copy');
-const isCopyButtonActive = ref<boolean>(false);
+const copyButtonIconName = ref<string>('tabler:copy')
+const isCopyButtonActive = ref<boolean>(false)
 
 const copyButtonHandleClick = async (): Promise<void> => {
-  await navigator.clipboard.writeText(props.code);
+  await navigator.clipboard.writeText(props.code)
 
-  copyButtonIconName.value = 'tabler:copy-check';
-  isCopyButtonActive.value = true;
+  copyButtonIconName.value = 'tabler:copy-check'
+  isCopyButtonActive.value = true
 
   setTimeout(() => {
-    copyButtonIconName.value = 'tabler:copy';
-    isCopyButtonActive.value = false;
-  }, 2000);
-};
+    copyButtonIconName.value = 'tabler:copy'
+    isCopyButtonActive.value = false
+  }, 2000)
+}
 
 function getIconName(language: string | null): string {
-  if (!language) return '';
+  if (!language) return ''
   const langMap: { [key: string]: string } = {
     py: 'catppuccin:python',
     python: 'catppuccin:python',
@@ -92,7 +97,7 @@ function getIconName(language: string | null): string {
     react: 'catppuccin:javascript-react',
     go: 'catppuccin:go',
     golang: 'catppuccin:go',
-  };
-  return langMap[language.toLowerCase()] || '';
+  }
+  return langMap[language.toLowerCase()] || ''
 }
 </script>

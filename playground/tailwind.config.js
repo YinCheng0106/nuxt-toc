@@ -1,5 +1,5 @@
-const plugin = require('tailwindcss/plugin');
-const colors = require('tailwindcss/colors');
+const plugin = require('tailwindcss/plugin')
+const colors = require('tailwindcss/colors')
 
 /** @type {import('tailwindcss').Config} */
 
@@ -24,9 +24,9 @@ module.exports = {
   },
   plugins: [
     plugin(function ({ addVariant }) {
-      addVariant('scrollbar', '&::-webkit-scrollbar');
-      addVariant('scrollbar-track', '&::-webkit-scrollbar-track');
-      addVariant('scrollbar-thumb', '&::-webkit-scrollbar-thumb');
+      addVariant('scrollbar', '&::-webkit-scrollbar')
+      addVariant('scrollbar-track', '&::-webkit-scrollbar-track')
+      addVariant('scrollbar-thumb', '&::-webkit-scrollbar-thumb')
     }),
   ],
-};
+}
