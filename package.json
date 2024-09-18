@@ -1,6 +1,6 @@
 {
   "name": "nuxt-toc",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A nuxt.js module for Table of Contents (TOC)",
   "repository": "https://github.com/hanyujie2002/nuxt-toc",
   "license": "MIT",
