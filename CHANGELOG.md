@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v1.1.1
+
+[compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v1.0.3...v1.1.1)
+
+### 🏡 Chore
+
+- Stop linting playground ([bef6294](https://github.com/hanyujie2002/nuxt-toc/commit/bef6294))
+- Remove dependency on tainwind ([dbfcfd9](https://github.com/hanyujie2002/nuxt-toc/commit/dbfcfd9))
+
+### ❤️ Contributors
+
+- Hanyujie2002 ([@hanyujie2002](http://github.com/hanyujie2002))
+
 ## v1.0.3
 
 [compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v1.0.1...v1.0.3)
