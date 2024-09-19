@@ -14,11 +14,12 @@
         v-for="link in data.body.toc.links"
         :id="`toc-item-${link.id}`"
         :key="link.text"
-        class="toc-item"
+        class="toc-item toc-topitem"
+        :class="{'active-toc-item': activeTocIds.has(link.id) || link.id === lastVisibleHeading, 'active-toc-topitem': activeTocIds.has(link.id) || link.id === lastVisibleHeading}"
       >
         <a
           :href="`#${link.id}`"
-          :class="{ 'toc-link': true, 'active-toc-item': activeTocIds.has(link.id) || link.id === lastVisibleHeading }"
+          :class="{ 'toc-link': true, 'toc-toplink': true, 'active-toc-link': activeTocIds.has(link.id) || link.id === lastVisibleHeading, 'active-toc-toplink': activeTocIds.has(link.id) || link.id === lastVisibleHeading }"
         >{{
           link.text }}</a>
         <ul
@@ -26,14 +27,15 @@
           class="toc-sublist"
         >
           <li
-            v-for="child in link.children"
-            :key="child.id"
+            v-for="sublink in link.children"
+            :key="sublink.id"
             class="toc-item toc-subitem"
+            :class="{'active-toc-subitem': activeTocIds.has(sublink.id) || sublink.id === lastVisibleHeading, 'active-toc-item': activeTocIds.has(sublink.id) || sublink.id === lastVisibleHeading }"
           >
             <a
-              :href="`#${child.id}`"
-              :class="{ 'toc-link': true, 'toc-sublink': true, 'active-toc-item': activeTocIds.has(child.id) || child.id === lastVisibleHeading }"
-            > {{ child.text }}</a>
+              :href="`#${sublink.id}`"
+              :class="{ 'toc-link': true, 'toc-sublink': true, 'active-toc-link': activeTocIds.has(sublink.id) || sublink.id === lastVisibleHeading, 'active-toc-sublink': activeTocIds.has(sublink.id) || sublink.id === lastVisibleHeading }"
+            > {{ sublink.text }}</a>
           </li>
         </ul>
       </li>
