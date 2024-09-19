@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.2.0
+
+[compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v1.1.1...v1.2.0)
+
+### 🚀 Enhancements
+
+- Addd some classes for styling ([1ac4bc4](https://github.com/hanyujie2002/nuxt-toc/commit/1ac4bc4))
+
+### 🏡 Chore
+
+- Add release scripts. ([aaa8a61](https://github.com/hanyujie2002/nuxt-toc/commit/aaa8a61))
+
+### ❤️ Contributors
+
+- Hanyujie2002 ([@hanyujie2002](http://github.com/hanyujie2002))
+
 ## v1.1.1
 
 [compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v1.0.3...v1.1.1)
