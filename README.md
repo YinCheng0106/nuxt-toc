@@ -57,7 +57,6 @@ npx nuxi module add nuxt-toc
 | **ID/Class**                | **Type** | **Description**                                                                                     |
 |-----------------------------|----------|-----------------------------------------------------------------------------------------------------|
 | `toc-container`             | ID       | The container for the table of contents (TOC).                                                      |
-| `toc-container`             | Class    | Styles the TOC container.                                                                           |
 | `toc-item`                  | Class    | General class for TOC items.                                                                        |
 | `toc-topitem`               | Class    | Specific class for top-level TOC items.                                                             |
 | `active-toc-item`           | Class    | Applied to active TOC items.                                                                        |
@@ -73,12 +72,7 @@ npx nuxi module add nuxt-toc
 | `active-toc-sublink`        | Class    | Applied to active sub-level TOC links.                                                              |
 | `toc-item-${link.id}`       | ID       | Dynamically generated ID for each TOC item, based on the `link.id`.                                 |
 | `toc-item-${link.id}`       | Class    | Dynamically generated class for each TOC item, based on the `link.id`.                              |
-| `active-toc-item`           | Class    | Applied to active TOC items, dynamically based on `activeTocIds` or `lastVisibleHeading`.           |
-| `active-toc-topitem`        | Class    | Applied to active top-level TOC items, dynamically based on `activeTocIds` or `lastVisibleHeading`. |
-| `active-toc-link`           | Class    | Applied to active TOC links, dynamically based on `activeTocIds` or `lastVisibleHeading`.           |
-| `active-toc-toplink`        | Class    | Applied to active top-level TOC links, dynamically based on `activeTocIds` or `lastVisibleHeading`. |
-| `active-toc-subitem`        | Class    | Applied to active sub-level TOC items, dynamically based on `activeTocIds` or `lastVisibleHeading`. |
-| `active-toc-sublink`        | Class    | Applied to active sub-level TOC links, dynamically based on `activeTocIds` or `lastVisibleHeading`. |
+
 
 [npm-version-src]: https://img.shields.io/npm/v/nuxt-toc/latest.svg?style=flat&colorA=020420&colorB=00DC82
 [npm-version-href]: https://npmjs.com/package/nuxt-toc
