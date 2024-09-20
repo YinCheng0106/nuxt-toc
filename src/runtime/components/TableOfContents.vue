@@ -47,7 +47,9 @@
       id="toc-container"
       class="toc-container"
     >
-      <li v-for="link in data.body.toc.links" :key="link.text"
+      <li
+        v-for="link in data.body.toc.links"
+        :key="link.text"
       >
         <div
           :id="`toc-item-${link.id}`"
