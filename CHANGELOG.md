@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v2.0.0
+
+[compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v1.6.0...v2.0.0)
+
+### 🚀 Enhancements
+
+- Implemented is-sublist-nested prop and renamed show-sub-list to is-sub-list-shown ([cd5f867](https://github.com/hanyujie2002/nuxt-toc/commit/cd5f867))
+
+### ❤️ Contributors
+
+- Hanyujie2002 ([@hanyujie2002](http://github.com/hanyujie2002))
+
 ## v1.6.0
 
 [compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v1.5.0...v1.6.0)
