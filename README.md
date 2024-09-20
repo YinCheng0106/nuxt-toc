@@ -43,6 +43,15 @@ npx nuxi module add nuxt-toc
 </template>
 ```
 
+## Props
+
+| **Prop**           | **Type** | **Default** | **Description**                                                                                     |
+|--------------------|----------|-------------|-----------------------------------------------------------------------------------------------------|
+| `path`             | String   | `''`        | The path to the content for which the TOC is generated. **If not set, `nuxt-toc` will default to using the current URI as the path**.                                    |
+| `isSubListShown`   | Boolean  | `true`      | Determines whether the sublist within the TOC is shown.                                             |
+| `title`            | String   | `'Table of Contents'` | The title of the TOC.                                                                               |
+| `isSublistNested`  | Boolean  | `true`      | Determines whether the sublist within the TOC is nested.                                            |
+
 ## Styling
 
 | **ID/Class**                | **Type** | **Description**                                                                                     |
