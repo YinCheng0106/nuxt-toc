@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.5.0
+
+[compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v1.4.0...v1.5.0)
+
+### 🚀 Enhancements
+
+- Implemented showSubList prop ([f2b3f64](https://github.com/hanyujie2002/nuxt-toc/commit/f2b3f64))
+
+### ❤️ Contributors
+
+- Hanyujie2002 ([@hanyujie2002](http://github.com/hanyujie2002))
+
 ## v1.4.0
 
 [compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v1.3.0...v1.4.0)
