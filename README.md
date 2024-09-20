@@ -1,84 +1,77 @@
-<!--
-Get your module up and running quickly.
-
-Find and replace all on all files (CMD+SHIFT+F):
-- Name: My Module
-- Package name: my-module
-- Description: My new Nuxt module
--->
-
-# My Module
+# nuxt-toc
 
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
 [![License][license-src]][license-href]
 [![Nuxt][nuxt-src]][nuxt-href]
 
-My new Nuxt module for doing amazing things.
+A Nuxt module for table of contents (TOC) component in your Nuxt Content projects.
 
-- [✨ &nbsp;Release Notes](/CHANGELOG.md)
-<!-- - [🏀 Online playground](https://stackblitz.com/github/your-org/my-module?file=playground%2Fapp.vue) -->
-<!-- - [📖 &nbsp;Documentation](https://example.com) -->
+![example](./image.png)
+
+- [✨  Release Notes](https://github.com/hanyujie2002/nuxt-toc/releases)
+<!-- - 🏀 Online playground -->
+<!-- - 📖  Documentation -->
 
 ## Features
 
-<!-- Highlight some of the features your module provide here -->
-- ⛰ &nbsp;Foo
-- 🚠 &nbsp;Bar
-- 🌲 &nbsp;Baz
+- 📑  Automatically generates a TOC from your content
+- 🔗  Links to sections within your content
+- 🎨  Customizable styles and active state handling
 
 ## Quick Setup
 
 Install the module to your Nuxt application with one command:
 
 ```bash
-npx nuxi module add my-module
+npx nuxi module add nuxt-toc
 ```
 
-That's it! You can now use My Module in your Nuxt app ✨
+## Quick Start
 
+```vue
+<template>
+    <ContentDoc />
+    <TableOfContents />
+</template>
+```
 
-## Contribution
+## Styling
 
-<details>
-  <summary>Local development</summary>
-  
-  ```bash
-  # Install dependencies
-  npm install
-  
-  # Generate type stubs
-  npm run dev:prepare
-  
-  # Develop with the playground
-  npm run dev
-  
-  # Build the playground
-  npm run dev:build
-  
-  # Run ESLint
-  npm run lint
-  
-  # Run Vitest
-  npm run test
-  npm run test:watch
-  
-  # Release new version
-  npm run release
-  ```
+| **ID/Class**                | **Type** | **Description**                                                                                     |
+|-----------------------------|----------|-----------------------------------------------------------------------------------------------------|
+| `toc-container`             | ID       | The container for the table of contents (TOC).                                                      |
+| `toc-container`             | Class    | Styles the TOC container.                                                                           |
+| `toc-item`                  | Class    | General class for TOC items.                                                                        |
+| `toc-topitem`               | Class    | Specific class for top-level TOC items.                                                             |
+| `active-toc-item`           | Class    | Applied to active TOC items.                                                                        |
+| `active-toc-topitem`        | Class    | Applied to active top-level TOC items.                                                              |
+| `toc-link`                  | Class    | General class for TOC links.                                                                        |
+| `toc-toplink`               | Class    | Specific class for top-level TOC links.                                                             |
+| `active-toc-link`           | Class    | Applied to active TOC links.                                                                        |
+| `active-toc-toplink`        | Class    | Applied to active top-level TOC links.                                                              |
+| `toc-sublist`               | Class    | Styles the sublist within the TOC.                                                                  |
+| `toc-subitem`               | Class    | Specific class for sub-level TOC items.                                                             |
+| `active-toc-subitem`        | Class    | Applied to active sub-level TOC items.                                                              |
+| `toc-sublink`               | Class    | Specific class for sub-level TOC links.                                                             |
+| `active-toc-sublink`        | Class    | Applied to active sub-level TOC links.                                                              |
+| `toc-item-${link.id}`       | ID       | Dynamically generated ID for each TOC item, based on the `link.id`.                                 |
+| `toc-item-${link.id}`       | Class    | Dynamically generated class for each TOC item, based on the `link.id`.                              |
+| `active-toc-item`           | Class    | Applied to active TOC items, dynamically based on `activeTocIds` or `lastVisibleHeading`.           |
+| `active-toc-topitem`        | Class    | Applied to active top-level TOC items, dynamically based on `activeTocIds` or `lastVisibleHeading`. |
+| `active-toc-link`           | Class    | Applied to active TOC links, dynamically based on `activeTocIds` or `lastVisibleHeading`.           |
+| `active-toc-toplink`        | Class    | Applied to active top-level TOC links, dynamically based on `activeTocIds` or `lastVisibleHeading`. |
+| `active-toc-subitem`        | Class    | Applied to active sub-level TOC items, dynamically based on `activeTocIds` or `lastVisibleHeading`. |
+| `active-toc-sublink`        | Class    | Applied to active sub-level TOC links, dynamically based on `activeTocIds` or `lastVisibleHeading`. |
 
-</details>
+[npm-version-src]: https://img.shields.io/npm/v/nuxt-toc/latest.svg?style=flat&colorA=020420&colorB=00DC82
+[npm-version-href]: https://npmjs.com/package/nuxt-toc
 
+[npm-downloads-src]: https://img.shields.io/npm/dm/nuxt-toc.svg?style=flat&colorA=020420&colorB=00DC82
+[npm-downloads-href]: https://npmjs.com/package/nuxt-toc
 
-<!-- Badges -->
-[npm-version-src]: https://img.shields.io/npm/v/my-module/latest.svg?style=flat&colorA=020420&colorB=00DC82
-[npm-version-href]: https://npmjs.com/package/my-module
-
-[npm-downloads-src]: https://img.shields.io/npm/dm/my-module.svg?style=flat&colorA=020420&colorB=00DC82
-[npm-downloads-href]: https://npmjs.com/package/my-module
-
-[license-src]: https://img.shields.io/npm/l/my-module.svg?style=flat&colorA=020420&colorB=00DC82
-[license-href]: https://npmjs.com/package/my-module
+[license-src]: https://img.shields.io/npm/l/nuxt-toc.svg?style=flat&colorA=020420&colorB=00DC82
+[license-href]: https://npmjs.com/package/nuxt-toc
 
 [nuxt-src]: https://img.shields.io/badge/Nuxt-020420?logo=nuxt.js
 [nuxt-href]: https://nuxt.com
