@@ -7,7 +7,7 @@
   >
     <span id="toc-title">{{ props.title }}</span>
     <ul
-      v-if="isSublistNested && data.body.toc && data.body.toc.links"
+      v-if="isSubListNested && data.body.toc && data.body.toc.links"
       id="toc-container"
       class="toc-container"
     >
@@ -43,7 +43,7 @@
     </ul>
 
     <ul
-      v-if="!isSublistNested && data.body.toc && data.body.toc.links"
+      v-if="!isSubListNested && data.body.toc && data.body.toc.links"
       id="toc-container"
       class="toc-container"
     >
