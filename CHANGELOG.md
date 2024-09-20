@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.6.0
+
+[compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v1.5.0...v1.6.0)
+
+### 🚀 Enhancements
+
+- Implement toc title ([bd7d975](https://github.com/hanyujie2002/nuxt-toc/commit/bd7d975))
+
+### ❤️ Contributors
+
+- Hanyujie2002 ([@hanyujie2002](http://github.com/hanyujie2002))
+
 ## v1.5.0
 
 [compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v1.4.0...v1.5.0)
