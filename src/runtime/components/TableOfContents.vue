@@ -104,7 +104,7 @@ const props = defineProps({
     type: String,
     default: 'Table of Contents',
   },
-  isSublistNested: {
+  isSubListNested: {
     type: Boolean,
     default: true,
   },
