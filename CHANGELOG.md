@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v2.0.6
+
+[compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v2.0.5...v2.0.6)
+
+### 📖 Documentation
+
+- Removed useless info ([5798e05](https://github.com/hanyujie2002/nuxt-toc/commit/5798e05))
+
+### ❤️ Contributors
+
+- Hanyujie2002 ([@hanyujie2002](http://github.com/hanyujie2002))
+
 ## v2.0.5
 
 [compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v2.0.4...v2.0.5)
