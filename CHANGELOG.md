@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v2.0.5
+
+[compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v2.0.4...v2.0.5)
+
+### 📖 Documentation
+
+- Add props info in readme ([364ed30](https://github.com/hanyujie2002/nuxt-toc/commit/364ed30))
+
+### ❤️ Contributors
+
+- Hanyujie2002 ([@hanyujie2002](http://github.com/hanyujie2002))
+
 ## v2.0.4
 
 [compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v2.0.3...v2.0.4)
