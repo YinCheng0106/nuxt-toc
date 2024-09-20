@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v2.0.4
+
+[compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v2.0.3...v2.0.4)
+
+### 📖 Documentation
+
+- Seted the size of logo ([feb687b](https://github.com/hanyujie2002/nuxt-toc/commit/feb687b))
+
+### ❤️ Contributors
+
+- Hanyujie2002 ([@hanyujie2002](http://github.com/hanyujie2002))
+
 ## v2.0.3
 
 [compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v2.0.2...v2.0.3)
