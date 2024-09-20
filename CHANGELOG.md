@@ -1,6 +1,23 @@
 # Changelog
 
 
+## v1.4.0
+
+[compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v1.3.0...v1.4.0)
+
+### 🚀 Enhancements
+
+- Implement default margin left for toc subitem ([ce99a4d](https://github.com/hanyujie2002/nuxt-toc/commit/ce99a4d))
+- Add support of path prop ([d573dcc](https://github.com/hanyujie2002/nuxt-toc/commit/d573dcc))
+
+### 🏡 Chore
+
+- Linted code ([d012006](https://github.com/hanyujie2002/nuxt-toc/commit/d012006))
+
+### ❤️ Contributors
+
+- Hanyujie2002 ([@hanyujie2002](http://github.com/hanyujie2002))
+
 ## v1.3.0
 
 [compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v1.2.0...v1.3.0)
