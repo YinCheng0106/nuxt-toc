@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v2.0.7
+
+[compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v2.0.6...v2.0.7)
+
+### 🏡 Chore
+
+- Aligh the naming of classes ([665354b](https://github.com/hanyujie2002/nuxt-toc/commit/665354b))
+
+### ❤️ Contributors
+
+- Hanyujie2002 ([@hanyujie2002](http://github.com/hanyujie2002))
+
 ## v2.0.6
 
 [compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v2.0.5...v2.0.6)
