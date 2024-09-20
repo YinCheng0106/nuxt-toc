@@ -5,9 +5,16 @@
 [![License][license-src]][license-href]
 [![Nuxt][nuxt-src]][nuxt-href]
 
+<div align="center">
+  <img src="./logo.png" alt="logo">
+</div>
+
 A Nuxt module for table of contents (TOC) component in your Nuxt Content projects.
 
-![example](./image.png)
+<div align="center">
+  <img src="./image.png" alt="example">
+</div>
+
 
 - [✨  Release Notes](https://github.com/hanyujie2002/nuxt-toc/releases)
 <!-- - 🏀 Online playground -->
