@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v2.0.2
+
+[compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v2.0.1...v2.0.2)
+
+### 📖 Documentation
+
+- Added a logo and centered the images ([2fc1ff9](https://github.com/hanyujie2002/nuxt-toc/commit/2fc1ff9))
+
+### ❤️ Contributors
+
+- Hanyujie2002 ([@hanyujie2002](http://github.com/hanyujie2002))
+
 ## v2.0.1
 
 [compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v2.0.0...v2.0.1)
