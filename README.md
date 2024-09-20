@@ -6,7 +6,7 @@
 [![Nuxt][nuxt-src]][nuxt-href]
 
 <div align="center">
-  <img src="./logo.png" alt="logo">
+  <img src="./logo.png" alt="logo" width="150">
 </div>
 
 A Nuxt module for table of contents (TOC) component in your Nuxt Content projects.
