@@ -1,7 +1,7 @@
 <template>
   <CustomQuery
     v-slot="{ data }"
-    :path="$route.path"
+    :path="resolvedPath"
     :only="['body']"
     find="one"
   >
@@ -45,10 +45,20 @@
 
 <script setup lang="ts">
 import CustomQuery from './CustomQuery.vue'
-import { ref, onMounted, onUnmounted } from '#imports'
+import { ref, onMounted, onUnmounted, useRoute, computed } from '#imports'
 
 const activeTocIds = ref<Set<string>>(new Set())
 const lastVisibleHeading = ref<string>('')
+
+const props = defineProps({
+  path: {
+    type: String,
+    default: ''
+  }
+})
+
+const route = useRoute()
+const resolvedPath = computed(() => props.path || route.path)
 
 const observeSections = () => {
   const options = {
