@@ -5,6 +5,7 @@
     :only="['body']"
     find="one"
   >
+    <span id="toc-title">{{ props.title }}</span>
     <ul
       v-if="data.body.toc && data.body.toc.links"
       id="toc-container"
@@ -57,8 +58,12 @@ const props = defineProps({
   },
   showSubList: {
     type: Boolean,
-    default: true 
-  }
+    default: true,
+  },
+  title: {
+    type: String,
+    default: 'Table of Contents',
+  },
 })
 
 const route = useRoute()
