@@ -15,7 +15,7 @@
         :id="`toc-item-${link.id}`"
         :key="link.text"
         class="toc-item toc-topitem"
-        :class="{'active-toc-item': activeTocIds.has(link.id) || link.id === lastVisibleHeading, 'active-toc-topitem': activeTocIds.has(link.id) || link.id === lastVisibleHeading}"
+        :class="{ 'active-toc-item': activeTocIds.has(link.id) || link.id === lastVisibleHeading, 'active-toc-topitem': activeTocIds.has(link.id) || link.id === lastVisibleHeading }"
       >
         <a
           :href="`#${link.id}`"
@@ -30,7 +30,7 @@
             v-for="sublink in link.children"
             :key="sublink.id"
             class="toc-item toc-subitem"
-            :class="{'active-toc-subitem': activeTocIds.has(sublink.id) || sublink.id === lastVisibleHeading, 'active-toc-item': activeTocIds.has(sublink.id) || sublink.id === lastVisibleHeading }"
+            :class="{ 'active-toc-subitem': activeTocIds.has(sublink.id) || sublink.id === lastVisibleHeading, 'active-toc-item': activeTocIds.has(sublink.id) || sublink.id === lastVisibleHeading }"
           >
             <a
               :href="`#${sublink.id}`"
@@ -90,5 +90,9 @@ onMounted((): void => {
 <style>
 .active-toc-item {
  color: #fef08a
+}
+
+.toc-subitem {
+  margin-left: 1rem;
 }
 </style>
