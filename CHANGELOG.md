@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.3.0
+
+[compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v1.2.0...v1.3.0)
+
+### 📖 Documentation
+
+- **README:** Init readme ([22fab29](https://github.com/hanyujie2002/nuxt-toc/commit/22fab29))
+
+### ❤️ Contributors
+
+- Hanyujie2002 ([@hanyujie2002](http://github.com/hanyujie2002))
+
 ## v1.2.0
 
 [compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v1.1.1...v1.2.0)
