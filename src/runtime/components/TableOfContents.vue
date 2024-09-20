@@ -7,7 +7,7 @@
   >
     <span id="toc-title">{{ props.title }}</span>
     <ul
-      v-if="data.body.toc && data.body.toc.links"
+      v-if="isSublistNested && data.body.toc && data.body.toc.links"
       id="toc-container"
       class="toc-container"
     >
@@ -24,7 +24,45 @@
         >{{
           link.text }}</a>
         <ul
-          v-if="showSubList && link.children && link.children.length"
+          v-if="isSubListShown && link.children && link.children.length"
+          class="toc-sublist"
+        >
+          <li
+            v-for="sublink in link.children"
+            :key="sublink.id"
+            class="toc-item toc-subitem"
+            :class="{ 'active-toc-subitem': activeTocIds.has(sublink.id) || sublink.id === lastVisibleHeading, 'active-toc-item': activeTocIds.has(sublink.id) || sublink.id === lastVisibleHeading }"
+          >
+            <a
+              :href="`#${sublink.id}`"
+              :class="{ 'toc-link': true, 'toc-sublink': true, 'active-toc-link': activeTocIds.has(sublink.id) || sublink.id === lastVisibleHeading, 'active-toc-sublink': activeTocIds.has(sublink.id) || sublink.id === lastVisibleHeading }"
+            > {{ sublink.text }}</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <ul
+      v-if="!isSublistNested && data.body.toc && data.body.toc.links"
+      id="toc-container"
+      class="toc-container"
+    >
+      <li v-for="link in data.body.toc.links" :key="link.text"
+      >
+        <div
+          :id="`toc-item-${link.id}`"
+          class="toc-item toc-topitem"
+          :class="{ 'active-toc-item': activeTocIds.has(link.id) || link.id === lastVisibleHeading, 'active-toc-topitem': activeTocIds.has(link.id) || link.id === lastVisibleHeading }"
+        >
+          <a
+            :href="`#${link.id}`"
+            :class="{ 'toc-link': true, 'toc-toplink': true, 'active-toc-link': activeTocIds.has(link.id) || link.id === lastVisibleHeading, 'active-toc-toplink': activeTocIds.has(link.id) || link.id === lastVisibleHeading }"
+          >{{
+            link.text }}</a>
+        </div>
+
+        <ul
+          v-if="isSubListShown && link.children && link.children.length"
           class="toc-sublist"
         >
           <li
@@ -56,13 +94,17 @@ const props = defineProps({
     type: String,
     default: '',
   },
-  showSubList: {
+  isSubListShown: {
     type: Boolean,
     default: true,
   },
   title: {
     type: String,
     default: 'Table of Contents',
+  },
+  isSublistNested: {
+    type: Boolean,
+    default: true,
   },
 })
 
@@ -112,6 +154,6 @@ onMounted((): void => {
 }
 
 .toc-subitem {
-  margin-left: 1rem;
+  padding-left: 1rem;
 }
 </style>
