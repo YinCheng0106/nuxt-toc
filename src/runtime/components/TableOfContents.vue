@@ -23,7 +23,7 @@
         >{{
           link.text }}</a>
         <ul
-          v-if="link.children && link.children.length"
+          v-if="showSubList && link.children && link.children.length"
           class="toc-sublist"
         >
           <li
@@ -55,6 +55,10 @@ const props = defineProps({
     type: String,
     default: '',
   },
+  showSubList: {
+    type: Boolean,
+    default: true 
+  }
 })
 
 const route = useRoute()
