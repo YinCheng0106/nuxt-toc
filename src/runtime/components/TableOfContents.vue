@@ -53,8 +53,8 @@ const lastVisibleHeading = ref<string>('')
 const props = defineProps({
   path: {
     type: String,
-    default: ''
-  }
+    default: '',
+  },
 })
 
 const route = useRoute()
