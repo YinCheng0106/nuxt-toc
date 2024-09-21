@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v2.4.2
+
+[compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v2.4.1...v2.4.2)
+
+### 📖 Documentation
+
+- Added Chinese translation of readme ([a2eff96](https://github.com/hanyujie2002/nuxt-toc/commit/a2eff96))
+- Translated an English word ([52f977f](https://github.com/hanyujie2002/nuxt-toc/commit/52f977f))
+
+### ❤️ Contributors
+
+- Hanyujie2002 ([@hanyujie2002](http://github.com/hanyujie2002))
+
 ## v2.4.1
 
 [compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v2.4.0...v2.4.1)
