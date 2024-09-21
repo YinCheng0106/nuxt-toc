@@ -11,30 +11,28 @@
 
 A Nuxt module for table of contents (TOC) component in your Nuxt Content projects.
 
-<div align="center">
-  <img src="./image.png" alt="example">
-</div>
 
 
 - [✨  Release Notes](https://github.com/hanyujie2002/nuxt-toc/releases)
 <!-- - 🏀 Online playground -->
 <!-- - 📖  Documentation -->
 
-## Features
+## Features ✨
 
-- 📑  Automatically generates a TOC from your content
-- 🔗  Links to sections within your content
-- 🎨  Customizable styles and active state handling
+- 🎨 **Highly Customizable**: Tailor it to fit your unique needs.
+- 🔍 **Active TOC Highlighting**: Easily see which section you're in.
+- 📦 **Out of the Box**: Ready to use with minimal setup.
+- 🔗 **Section Links**: Navigate seamlessly within your content.
 
-## Quick Setup
+## Quick Start 🔧
 
-Install the module to your Nuxt application with one command:
+1. Install the module to your Nuxt application with one command:
 
 ```bash
 npx nuxi module add nuxt-toc
 ```
 
-## Quick Start
+2. Add `<TableOfContents />` at where TOC is needed.
 
 ```vue
 <template>
@@ -48,15 +46,15 @@ npx nuxi module add nuxt-toc
 | **Prop**           | **Type** | **Default** | **Description**                                                                                     |
 |--------------------|----------|-------------|-----------------------------------------------------------------------------------------------------|
 | `path`             | String   | `''`        | The path to the content for which the TOC is generated. **If not set, `nuxt-toc` will default to using the current URI as the path**.                                    |
-| `isSubListShown`   | Boolean  | `true`      | Determines whether the sublist within the TOC is shown.                                             |
+| `is-sub-listshown`   | Boolean  | `true`      | Determines whether the sublist within the TOC is shown.                                             |
 | `title`            | String   | `'Table of Contents'` | The title of the TOC.                                                                               |
-| `isSublistNested`  | Boolean  | `true`      | Determines whether the sublist within the TOC is nested.                                            |
 
 ## Styling
 
 | **ID/Class**                | **Type** | **Description**                                                                                     |
 |-----------------------------|----------|-----------------------------------------------------------------------------------------------------|
 | `toc-container`             | ID       | The container for the table of contents (TOC).                                                      |
+| `toc-title`                 | ID       | The title of the table of contents.                                                                 |
 | `toc-item`                  | Class    | General class for TOC items.                                                                        |
 | `toc-topitem`               | Class    | Specific class for top-level TOC items.                                                             |
 | `active-toc-item`           | Class    | Applied to active TOC items.                                                                        |
@@ -71,8 +69,99 @@ npx nuxi module add nuxt-toc
 | `toc-sublink`               | Class    | Specific class for sub-level TOC links.                                                             |
 | `active-toc-sublink`        | Class    | Applied to active sub-level TOC links.                                                              |
 | `toc-item-${link.id}`       | ID       | Dynamically generated ID for each TOC item, based on the `link.id`.                                 |
-| `toc-item-${link.id}`       | Class    | Dynamically generated class for each TOC item, based on the `link.id`.                              |
+| `toc-topitem-and-sublist`   | Class    | Styles the top-level TOC items and their sublists.                                                  |
 
+## Cookbook
+
+### Example One
+
+Custom color for active items and custom padding for subitems
+
+```vue
+<template>
+    <ContentDoc />
+    <TableOfContents />
+</template>
+
+<style>
+/* Styling for active Table of Contents items */
+.active-toc-item {
+  color: #4ade80;
+}
+
+/* Indentation for second-level Table of Contents items */
+.toc-sublist-item {
+  padding-left: 1.5rem;
+}
+</style>
+
+<!-- Or with Tailwind CSS
+<style>
+.active-toc-item {
+  @apply bg-green-300
+}
+
+.toc-sublist-item {
+  @apply pl-1.5
+}
+</style>
+-->
+```
+
+Result:
+
+<div align="center">
+  <img src="./example.png" alt="example">
+</div>
+
+### Example Two
+
+Having a bar at left of each item
+
+```vue
+<template>
+    <ContentDoc />
+    <TableOfContents />
+</template>
+
+<style>
+.toc-item {
+  border-left-width: 2px;
+  padding-left: 0.25rem /* 4px */;
+}
+
+.active-toc-item {
+  color: #60a5fa;
+  border-color: #60a5fa;
+}
+
+.toc-sublist-item {
+  padding-left: 1rem;
+}
+</style>
+
+<!-- Or with Tailwind CSS
+<style>
+.toc-item {
+  @apply border-l-2 pl-1
+}
+
+.active-toc-item {
+  @apply text-blue-400 border-blue-400
+}
+
+.toc-sublist-item {
+  @apply pl-4
+}
+</style>
+-->
+```
+
+Result:
+
+<div align="center">
+  <img src="./example1.png" alt="example1">
+</div>
 
 [npm-version-src]: https://img.shields.io/npm/v/nuxt-toc/latest.svg?style=flat&colorA=020420&colorB=00DC82
 [npm-version-href]: https://npmjs.com/package/nuxt-toc
