@@ -5,7 +5,7 @@
     :only="['body']"
     find="one"
   >
-    <span id="toc-title">{{ props.title }}</span>
+    <span v-if="(data.body.toc && data.body.toc.links) || isTitleShownWithNoContent" id="toc-title">{{ props.title }}</span>
     <ul
       v-if="data.body.toc && data.body.toc.links"
       id="toc-container"
@@ -63,6 +63,10 @@ const props = defineProps({
   isSublistShown: {
     type: Boolean,
     default: true,
+  },
+  isTitleShownWithNoContent: {
+    type: Boolean,
+    default: false,
   },
   title: {
     type: String,
