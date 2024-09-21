@@ -5,7 +5,7 @@
     :only="['body']"
     find="one"
   >
-    <span v-if="(data.body.toc && data.body.toc.links) || isTitleShownWithNoContent" id="toc-title">{{ props.title }}</span>
+    <span v-if="(data.body.toc && data.body.toc.links.length) || isTitleShownWithNoContent" id="toc-title">{{ props.title }}</span>
     <ul
       v-if="data.body.toc && data.body.toc.links"
       id="toc-container"
