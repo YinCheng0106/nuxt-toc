@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v2.2.0
+
+[compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v2.1.0...v2.2.0)
+
+### 🏡 Chore
+
+- Update case of isSublistShown to align ([66e1895](https://github.com/hanyujie2002/nuxt-toc/commit/66e1895))
+
+### ❤️ Contributors
+
+- Hanyujie2002 ([@hanyujie2002](http://github.com/hanyujie2002))
+
 ## v2.1.0
 
 [compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v2.0.8...v2.1.0)
