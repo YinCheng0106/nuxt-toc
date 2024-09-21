@@ -46,7 +46,8 @@ npx nuxi module add nuxt-toc
 | **Prop**           | **Type** | **Default** | **Description**                                                                                     |
 |--------------------|----------|-------------|-----------------------------------------------------------------------------------------------------|
 | `path`             | String   | `''`        | The path to the content for which the TOC is generated. **If not set, `nuxt-toc` will default to using the current URI as the path**.                                    |
-| `is-sub-listshown`   | Boolean  | `true`      | Determines whether the sublist within the TOC is shown.                                             |
+| `isSublistShown`   | Boolean  | `true`      | Determines whether the sublist within the TOC is shown.                                             |
+| `isTitleShownWithNoContent` | Boolean  | `false`     | Determines whether the title is shown even if there is no content in the TOC.                                  |
 | `title`            | String   | `'Table of Contents'` | The title of the TOC.                                                                               |
 
 ## Styling
@@ -70,6 +71,31 @@ npx nuxi module add nuxt-toc
 | `active-toc-sublink`        | Class    | Applied to active sub-level TOC links.                                                              |
 | `toc-item-${link.id}`       | ID       | Dynamically generated ID for each TOC item, based on the `link.id`.                                 |
 | `toc-topitem-and-sublist`   | Class    | Styles the top-level TOC items and their sublists.                                                  |
+
+> [!NOTE]
+> The default styling of the `<TableOfContents />` component is:
+>
+> ```css
+> .active-toc-item {
+>   color: #fef08a;
+> }
+>
+> .toc-sublist-item {
+>   padding-left: 1rem;
+> }
+> ```
+>
+> You can customize the style or reset it with:
+>
+> ```css
+> .active-toc-item {
+>   color: inherit;
+> }
+>
+> .toc-sublist-item {
+>   padding-left: 0;
+> }
+> ```
 
 ## Cookbook
 
@@ -111,7 +137,7 @@ Custom color for active items and custom padding for subitems
 Result:
 
 <div align="center">
-  <img src="./example.png" alt="example">
+  <img src="./screenshots/example.png" alt="example">
 </div>
 
 ### Example Two
@@ -160,7 +186,64 @@ Having a bar at left of each item
 Result:
 
 <div align="center">
-  <img src="./example1.png" alt="example1">
+  <img src="./screenshots/example1.png" alt="example1">
+</div>
+
+### Example Three
+
+First level titles be active when any of it's second level titles be active.
+
+```vue
+<template>
+    <ContentDoc />
+    <TableOfContents />
+</template>
+
+<style>
+.active-toc-item {
+  /* Overrides builtin style */
+  color: inherit;
+}
+
+/* Sublist item is contained in sub list, which is top item's sibling */
+.active-toc-item, .toc-topitem:has(+ .toc-sublist .active-toc-sublist-item) {
+  color: #60a5fa
+}
+
+.active-toc-sublist-item {
+  color: #4ade80
+}
+
+.toc-sublist-item {
+  padding-left: 1rem /* 16px */;
+}
+</style>
+
+<!-- Or with Tailwind CSS
+<style>
+.active-toc-item {
+  @apply text-inherit
+}
+
+.active-toc-item, .toc-topitem:has(+ .toc-sublist .active-toc-sublist-item) {
+  @apply text-blue-400
+}
+
+.active-toc-sublist-item {
+  @apply text-green-400
+}
+
+.toc-sublist-item {
+  @apply pl-4
+}
+</style>
+-->
+```
+
+Result:
+
+<div align="center">
+  <img src="./screenshots/example2.png" alt="example2">
 </div>
 
 [npm-version-src]: https://img.shields.io/npm/v/nuxt-toc/latest.svg?style=flat&colorA=020420&colorB=00DC82
