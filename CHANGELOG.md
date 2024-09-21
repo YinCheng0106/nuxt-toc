@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v2.4.7
+
+[compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v2.4.6...v2.4.7)
+
+### 🏡 Chore
+
+- Added @nuxt/content dependency ([5761e1a](https://github.com/hanyujie2002/nuxt-toc/commit/5761e1a))
+
+### ❤️ Contributors
+
+- Hanyujie2002 ([@hanyujie2002](http://github.com/hanyujie2002))
+
 ## v2.4.6
 
 [compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v2.4.5...v2.4.6)
