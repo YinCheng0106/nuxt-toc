@@ -3,6 +3,10 @@
 
 ## v2.4.6
 
+[compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v2.4.6...v2.4.6)
+
+## v2.4.6
+
 [compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v2.4.5...v2.4.6)
 
 ### 📖 Documentation
