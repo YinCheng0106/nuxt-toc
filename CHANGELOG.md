@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v2.1.0
+
+[compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v2.0.8...v2.1.0)
+
+### 🚀 Enhancements
+
+- Removed nested mode and simplified the code ([325ad4c](https://github.com/hanyujie2002/nuxt-toc/commit/325ad4c))
+- Simplified the code ([b2989d4](https://github.com/hanyujie2002/nuxt-toc/commit/b2989d4))
+
+### ❤️ Contributors
+
+- Hanyujie2002 ([@hanyujie2002](http://github.com/hanyujie2002))
+
 ## v2.0.8
 
 [compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v2.0.7...v2.0.8)
