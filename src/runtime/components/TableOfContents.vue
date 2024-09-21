@@ -28,7 +28,7 @@
         </div>
 
         <ul
-          v-if="isSubListShown && link.children && link.children.length"
+          v-if="isSublistShown && link.children && link.children.length"
           class="toc-sublist"
         >
           <li
@@ -60,7 +60,7 @@ const props = defineProps({
     type: String,
     default: '',
   },
-  isSubListShown: {
+  isSublistShown: {
     type: Boolean,
     default: true,
   },
