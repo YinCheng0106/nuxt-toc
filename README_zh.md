@@ -238,7 +238,7 @@ npx nuxi module add nuxt-toc
 -->
 ```
 
-Result:
+结果：
 
 <div align="center">
   <img src="./screenshots/example2.png" alt="example2">
