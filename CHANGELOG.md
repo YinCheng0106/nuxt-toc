@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v2.2.1
+
+[compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v2.2.0...v2.2.1)
+
+### 📖 Documentation
+
+- Added two examples ([f9d10dd](https://github.com/hanyujie2002/nuxt-toc/commit/f9d10dd))
+
+### ❤️ Contributors
+
+- Hanyujie2002 ([@hanyujie2002](http://github.com/hanyujie2002))
+
 ## v2.2.0
 
 [compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v2.1.0...v2.2.0)
