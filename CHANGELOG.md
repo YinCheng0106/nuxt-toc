@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v2.4.9
+
+[compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v2.4.8...v2.4.9)
+
+### 🏡 Chore
+
+- Added new dependencies ([1460c3a](https://github.com/hanyujie2002/nuxt-toc/commit/1460c3a))
+
+### ❤️ Contributors
+
+- Hanyujie2002 ([@hanyujie2002](http://github.com/hanyujie2002))
+
 ## v2.4.8
 
 [compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v2.4.7...v2.4.8)
