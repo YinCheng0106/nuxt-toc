@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v2.3.0
+
+[compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v2.2.1...v2.3.0)
+
+### 🚀 Enhancements
+
+- Implemented is-title-shown-with-no-content prop ([6621df2](https://github.com/hanyujie2002/nuxt-toc/commit/6621df2))
+
+### ❤️ Contributors
+
+- Hanyujie2002 ([@hanyujie2002](http://github.com/hanyujie2002))
+
 ## v2.2.1
 
 [compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v2.2.0...v2.2.1)
