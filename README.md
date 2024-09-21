@@ -1,3 +1,5 @@
+[中文](./README.md)
+
 # nuxt-toc
 
 [![npm version][npm-version-src]][npm-version-href]
