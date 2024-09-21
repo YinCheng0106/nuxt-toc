@@ -7,49 +7,13 @@
   >
     <span id="toc-title">{{ props.title }}</span>
     <ul
-      v-if="isSubListNested && data.body.toc && data.body.toc.links"
+      v-if="data.body.toc && data.body.toc.links"
       id="toc-container"
-      class="toc-container"
-    >
-      <li
-        v-for="link in data.body.toc.links"
-        :id="`toc-item-${link.id}`"
-        :key="link.text"
-        class="toc-item toc-topitem"
-        :class="{ 'active-toc-item': activeTocIds.has(link.id) || link.id === lastVisibleHeading, 'active-toc-topitem': activeTocIds.has(link.id) || link.id === lastVisibleHeading }"
-      >
-        <a
-          :href="`#${link.id}`"
-          :class="{ 'toc-link': true, 'toc-toplink': true, 'active-toc-link': activeTocIds.has(link.id) || link.id === lastVisibleHeading, 'active-toc-toplink': activeTocIds.has(link.id) || link.id === lastVisibleHeading }"
-        >{{
-          link.text }}</a>
-        <ul
-          v-if="isSubListShown && link.children && link.children.length"
-          class="toc-sublist"
-        >
-          <li
-            v-for="sublink in link.children"
-            :key="sublink.id"
-            class="toc-item toc-subitem"
-            :class="{ 'active-toc-subitem': activeTocIds.has(sublink.id) || sublink.id === lastVisibleHeading, 'active-toc-item': activeTocIds.has(sublink.id) || sublink.id === lastVisibleHeading }"
-          >
-            <a
-              :href="`#${sublink.id}`"
-              :class="{ 'toc-link': true, 'toc-sublink': true, 'active-toc-link': activeTocIds.has(sublink.id) || sublink.id === lastVisibleHeading, 'active-toc-sublink': activeTocIds.has(sublink.id) || sublink.id === lastVisibleHeading }"
-            > {{ sublink.text }}</a>
-          </li>
-        </ul>
-      </li>
-    </ul>
-
-    <ul
-      v-if="!isSubListNested && data.body.toc && data.body.toc.links"
-      id="toc-container"
-      class="toc-container"
     >
       <li
         v-for="link in data.body.toc.links"
         :key="link.text"
+        class="toc-topitem-and-sublist"
       >
         <div
           :id="`toc-item-${link.id}`"
@@ -70,8 +34,8 @@
           <li
             v-for="sublink in link.children"
             :key="sublink.id"
-            class="toc-item toc-subitem"
-            :class="{ 'active-toc-subitem': activeTocIds.has(sublink.id) || sublink.id === lastVisibleHeading, 'active-toc-item': activeTocIds.has(sublink.id) || sublink.id === lastVisibleHeading }"
+            class="toc-item toc-sublist-item"
+            :class="{ 'active-toc-sublist-item': activeTocIds.has(sublink.id) || sublink.id === lastVisibleHeading, 'active-toc-item': activeTocIds.has(sublink.id) || sublink.id === lastVisibleHeading }"
           >
             <a
               :href="`#${sublink.id}`"
@@ -103,10 +67,6 @@ const props = defineProps({
   title: {
     type: String,
     default: 'Table of Contents',
-  },
-  isSubListNested: {
-    type: Boolean,
-    default: true,
   },
 })
 
@@ -155,7 +115,7 @@ onMounted((): void => {
  color: #fef08a
 }
 
-.toc-subitem {
+.toc-sublist-item {
   padding-left: 1rem;
 }
 </style>
