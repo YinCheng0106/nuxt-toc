@@ -3,6 +3,23 @@
 
 ## v2.4.6
 
+[compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v2.4.5...v2.4.6)
+
+### 📖 Documentation
+
+- Added licence info in readme ([bada191](https://github.com/hanyujie2002/nuxt-toc/commit/bada191))
+
+### 🏡 Chore
+
+- **release:** V2.4.6 ([6b47dc5](https://github.com/hanyujie2002/nuxt-toc/commit/6b47dc5))
+- **release:** V2.4.6 ([3169c77](https://github.com/hanyujie2002/nuxt-toc/commit/3169c77))
+
+### ❤️ Contributors
+
+- Hanyujie2002 ([@hanyujie2002](http://github.com/hanyujie2002))
+
+## v2.4.6
+
 [compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v2.4.6...v2.4.6)
 
 ## v2.4.6
