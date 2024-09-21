@@ -244,6 +244,10 @@ npx nuxi module add nuxt-toc
   <img src="./screenshots/example2.png" alt="example2">
 </div>
 
+## 许可证
+
+本项目基于 [MIT](https://raw.githubusercontent.com/hanyujie2002/nuxt-toc/refs/heads/main/LICENSE) 许可证。
+
 [npm-version-src]: https://img.shields.io/npm/v/nuxt-toc/latest.svg?style=flat&colorA=020420&colorB=00DC82
 [npm-version-href]: https://npmjs.com/package/nuxt-toc
 

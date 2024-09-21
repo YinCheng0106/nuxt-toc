@@ -248,6 +248,10 @@ Result:
   <img src="./screenshots/example2.png" alt="example2">
 </div>
 
+## License
+
+This project is under [MIT](https://raw.githubusercontent.com/hanyujie2002/nuxt-toc/refs/heads/main/LICENSE) license.
+
 [npm-version-src]: https://img.shields.io/npm/v/nuxt-toc/latest.svg?style=flat&colorA=020420&colorB=00DC82
 [npm-version-href]: https://npmjs.com/package/nuxt-toc
 
