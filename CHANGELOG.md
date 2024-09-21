@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v2.4.8
+
+[compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v2.4.7...v2.4.8)
+
+### 💅 Refactors
+
+- Use npm instead of pnpm ([c26cec4](https://github.com/hanyujie2002/nuxt-toc/commit/c26cec4))
+
+### ❤️ Contributors
+
+- Hanyujie2002 ([@hanyujie2002](http://github.com/hanyujie2002))
+
 ## v2.4.7
 
 [compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v2.4.6...v2.4.7)
