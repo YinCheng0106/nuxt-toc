@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v2.4.5
+
+[compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v2.4.4...v2.4.5)
+
+### 📖 Documentation
+
+- Added author and keywords info ([bb6a9ca](https://github.com/hanyujie2002/nuxt-toc/commit/bb6a9ca))
+
+### ❤️ Contributors
+
+- Hanyujie2002 ([@hanyujie2002](http://github.com/hanyujie2002))
+
 ## v2.4.4
 
 [compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v2.4.3...v2.4.4)
