@@ -46,7 +46,7 @@ npx nuxi module add nuxt-toc
 | `path`             | String   | `''`        | 生成目录的内容路径。**如果未设置，`nuxt-toc` 将默认使用当前 URI 作为路径**。                                    |
 | `isSublistShown`   | Boolean  | `true`      | 决定是否显示目录中的子列表。                                             |
 | `isTitleShownWithNoContent` | Boolean  | `false`     | 决定在目录中没有内容的情况下是否显示标题。                                  |
-| `title`            | String   | `'目录'` | 目录的标题。                                                                               |
+| `title`            | String   | `'Table of Contents'` | 目录的标题。                                                                               |
 
 ## 样式
 
