@@ -126,10 +126,7 @@ onMounted((): void => {
   padding-left: 1rem;
 }
 
-a:link,
-a:hover,
-a:active,
-a:visited {
+a {
   text-decoration: none;
   color: inherit;
 }
