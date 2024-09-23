@@ -153,7 +153,7 @@ Having a bar at left of each item
 .toc-item {
   border-left-width: 2px;
   border-left-style: solid;
-  border-left-color: white;
+  border-color: white;
   padding-left: 0.25rem /* 4px */;
 }
 
