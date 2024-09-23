@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v2.5.1
+
+[compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v2.5.0...v2.5.1)
+
+### 💅 Refactors
+
+- Simplified the code ([5d5622d](https://github.com/hanyujie2002/nuxt-toc/commit/5d5622d))
+
+### ❤️ Contributors
+
+- Hanyujie2002 ([@hanyujie2002](http://github.com/hanyujie2002))
+
 ## v2.5.0
 
 [compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v2.4.9...v2.5.0)
