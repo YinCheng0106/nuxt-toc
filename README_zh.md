@@ -60,13 +60,10 @@ npx nuxi module add nuxt-toc
 | `active-toc-topitem`        | 类    | 应用于当前顶级目录项。                                                              |
 | `toc-link`                  | 类    | 目录链接的通用类。                                                                        |
 | `toc-toplink`               | 类    | 顶级目录链接的特定类。                                                             |
-| `active-toc-link`           | 类    | 应用于当前目录链接。                                                                        |
-| `active-toc-toplink`        | 类    | 应用于当前顶级目录链接。                                                              |
 | `toc-sublist`               | 类    | 目录中子列表的样式。                                                                  |
 | `toc-subitem`               | 类    | 子级目录项的特定类。                                                             |
 | `active-toc-subitem`        | 类    | 应用于当前子级目录项。                                                              |
 | `toc-sublink`               | 类    | 子级目录链接的特定类。                                                             |
-| `active-toc-sublink`        | 类    | 应用于当前子级目录链接。                                                              |
 | `toc-item-${link.id}`       | ID       | 基于 `link.id` 动态生成的每个目录项的 ID。                                 |
 | `toc-topitem-and-sublist`   | 类    | 顶级目录项及其子列表的样式。                                                  |
 

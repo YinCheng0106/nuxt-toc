@@ -64,13 +64,10 @@ npx nuxi module add nuxt-toc
 | `active-toc-topitem`        | Class    | Applied to active top-level TOC items.                                                              |
 | `toc-link`                  | Class    | General class for TOC links.                                                                        |
 | `toc-toplink`               | Class    | Specific class for top-level TOC links.                                                             |
-| `active-toc-link`           | Class    | Applied to active TOC links.                                                                        |
-| `active-toc-toplink`        | Class    | Applied to active top-level TOC links.                                                              |
 | `toc-sublist`               | Class    | Styles the sublist within the TOC.                                                                  |
 | `toc-subitem`               | Class    | Specific class for sub-level TOC items.                                                             |
 | `active-toc-subitem`        | Class    | Applied to active sub-level TOC items.                                                              |
 | `toc-sublink`               | Class    | Specific class for sub-level TOC links.                                                             |
-| `active-toc-sublink`        | Class    | Applied to active sub-level TOC links.                                                              |
 | `toc-item-${link.id}`       | ID       | Dynamically generated ID for each TOC item, based on the `link.id`.                                 |
 | `toc-topitem-and-sublist`   | Class    | Styles the top-level TOC items and their sublists.                                                  |
 
