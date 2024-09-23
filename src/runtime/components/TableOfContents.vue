@@ -5,7 +5,10 @@
     :only="['body']"
     find="one"
   >
-    <span v-if="(data.body.toc && data.body.toc.links.length) || isTitleShownWithNoContent" id="toc-title">{{ props.title }}</span>
+    <span
+      v-if="(data.body.toc && data.body.toc.links.length) || isTitleShownWithNoContent"
+      id="toc-title"
+    >{{ props.title }}</span>
     <ul
       v-if="data.body.toc && data.body.toc.links"
       id="toc-container"
@@ -121,5 +124,20 @@ onMounted((): void => {
 
 .toc-sublist-item {
   padding-left: 1rem;
+}
+
+a:link,
+a:hover,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 </style>
