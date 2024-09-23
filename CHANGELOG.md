@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v2.5.2
+
+[compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v2.5.1...v2.5.2)
+
+### 📖 Documentation
+
+- Remove info of deprecated classes ([1a0da31](https://github.com/hanyujie2002/nuxt-toc/commit/1a0da31))
+
+### ❤️ Contributors
+
+- Hanyujie2002 ([@hanyujie2002](http://github.com/hanyujie2002))
+
 ## v2.5.1
 
 [compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v2.5.0...v2.5.1)
