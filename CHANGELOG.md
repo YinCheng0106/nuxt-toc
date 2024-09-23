@@ -1,6 +1,26 @@
 # Changelog
 
 
+## v2.5.0
+
+[compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v2.4.9...v2.5.0)
+
+### 🚀 Enhancements
+
+- Unstyled links and lists ([2e2a2da](https://github.com/hanyujie2002/nuxt-toc/commit/2e2a2da))
+
+### 📖 Documentation
+
+- Fixed two examples ([26b24f3](https://github.com/hanyujie2002/nuxt-toc/commit/26b24f3))
+
+### 🏡 Chore
+
+- Minified js codes ([ea37a41](https://github.com/hanyujie2002/nuxt-toc/commit/ea37a41))
+
+### ❤️ Contributors
+
+- Hanyujie2002 ([@hanyujie2002](http://github.com/hanyujie2002))
+
 ## v2.4.9
 
 [compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v2.4.8...v2.4.9)
