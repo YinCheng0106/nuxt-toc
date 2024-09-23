@@ -122,7 +122,7 @@ npx nuxi module add nuxt-toc
 <!-- 或者使用 Tailwind CSS
 <style>
 .active-toc-item {
-  @apply bg-green-300
+  @apply text-green-300
 }
 
 .toc-sublist-item {
@@ -151,6 +151,8 @@ npx nuxi module add nuxt-toc
 <style>
 .toc-item {
   border-left-width: 2px;
+  border-left-style: solid;
+  border-left-color: white;
   padding-left: 0.25rem /* 4px */;
 }
 
