@@ -49,6 +49,7 @@
             class="toc-item toc-sublist-item"
             :class="{ 'active-toc-item active-toc-sublist-item': activeTocIds.has(sublink.id) || sublink.id === lastVisibleHeading }"
             role="listitem"
+            aria-level="4"
           >
             <a
               :href="`#${sublink.id}`"
