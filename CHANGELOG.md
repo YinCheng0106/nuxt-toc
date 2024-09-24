@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v2.6.0
+
+[compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v2.5.3...v2.6.0)
+
+### 🚀 Enhancements
+
+- Implemented aria support ([dffa643](https://github.com/hanyujie2002/nuxt-toc/commit/dffa643))
+
+### ❤️ Contributors
+
+- Hanyujie2002 ([@hanyujie2002](http://github.com/hanyujie2002))
+
 ## v2.5.3
 
 [compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v2.5.2...v2.5.3)
