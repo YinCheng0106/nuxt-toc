@@ -151,7 +151,7 @@ npx nuxi module add nuxt-toc
 .toc-item {
   border-left-width: 2px;
   border-left-style: solid;
-  border-color: white;
+  border-color: #e5e7eb;
   padding-left: 0.25rem /* 4px */;
 }
 
