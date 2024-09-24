@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v2.6.1
+
+[compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v2.6.0...v2.6.1)
+
+### 🚀 Enhancements
+
+- Added aria-level for toc sublist items ([7263c38](https://github.com/hanyujie2002/nuxt-toc/commit/7263c38))
+
+### ❤️ Contributors
+
+- Hanyujie2002 ([@hanyujie2002](http://github.com/hanyujie2002))
+
 ## v2.6.0
 
 [compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v2.5.3...v2.6.0)
