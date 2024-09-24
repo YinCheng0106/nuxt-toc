@@ -224,8 +224,8 @@ npx nuxi module add nuxt-toc
 
 <style>
 .active-toc-item {
-  /* 覆盖内置样式 */
-  color: inherit;
+  /* 重置内置样式 */
+  color: initial;
 }
 
 /* 子级目录项包含在子列表中，而子列表是顶级目录项的兄弟元素 */

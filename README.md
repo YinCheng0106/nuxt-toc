@@ -229,7 +229,7 @@ First level titles be active when any of it's second level titles be active.
 <style>
 .active-toc-item {
   /* Overrides builtin style */
-  color: inherit;
+  color: initial;
 }
 
 /* Sublist item is contained in sub list, which is top item's sibling */
