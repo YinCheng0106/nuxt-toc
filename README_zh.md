@@ -224,10 +224,6 @@ npx nuxi module add nuxt-toc
 
 <style>
 .active-toc-item {
-  /* 重置内置样式 */
-  color: initial;
-}
-
 /* 子级目录项包含在子列表中，而子列表是顶级目录项的兄弟元素 */
 .active-toc-item, .toc-topitem:has(+ .toc-sublist .active-toc-sublist-item) {
   color: #60a5fa
@@ -244,10 +240,6 @@ npx nuxi module add nuxt-toc
 
 <!-- 或者使用 Tailwind CSS
 <style>
-.active-toc-item {
-  @apply text-inherit
-}
-
 .active-toc-item, .toc-topitem:has(+ .toc-sublist .active-toc-sublist-item) {
   @apply text-blue-400
 }

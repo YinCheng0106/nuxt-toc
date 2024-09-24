@@ -227,11 +227,6 @@ First level titles be active when any of it's second level titles be active.
 </template>
 
 <style>
-.active-toc-item {
-  /* Overrides builtin style */
-  color: initial;
-}
-
 /* Sublist item is contained in sub list, which is top item's sibling */
 .active-toc-item, .toc-topitem:has(+ .toc-sublist .active-toc-sublist-item) {
   color: #60a5fa
@@ -248,10 +243,6 @@ First level titles be active when any of it's second level titles be active.
 
 <!-- Or with Tailwind CSS
 <style>
-.active-toc-item {
-  @apply text-inherit
-}
-
 .active-toc-item, .toc-topitem:has(+ .toc-sublist .active-toc-sublist-item) {
   @apply text-blue-400
 }
