@@ -8,24 +8,32 @@
     <span
       v-if="(data.body.toc && data.body.toc.links.length) || isTitleShownWithNoContent"
       id="toc-title"
+      role="heading"
+      aria-level="2"
     >{{ props.title }}</span>
     <ul
       v-if="data.body.toc && data.body.toc.links"
       id="toc-container"
+      role="list"
+      aria-labelledby="toc-title"
     >
       <li
         v-for="link in data.body.toc.links"
         :key="link.text"
         class="toc-topitem-and-sublist"
+        role="listitem"
       >
         <div
           :id="`toc-item-${link.id}`"
           class="toc-item toc-topitem"
           :class="{ 'active-toc-item active-toc-topitem': activeTocIds.has(link.id) || link.id === lastVisibleHeading }"
+          role="heading"
+          arai-level="3"
         >
           <a
             :href="`#${link.id}`"
             class="toc-link toc-toplink"
+            role="link"
           >{{
             link.text }}</a>
         </div>
@@ -33,16 +41,19 @@
         <ul
           v-if="isSublistShown && link.children && link.children.length"
           class="toc-sublist"
+          role="list"
         >
           <li
             v-for="sublink in link.children"
             :key="sublink.id"
             class="toc-item toc-sublist-item"
             :class="{ 'active-toc-item active-toc-sublist-item': activeTocIds.has(sublink.id) || sublink.id === lastVisibleHeading }"
+            role="listitem"
           >
             <a
               :href="`#${sublink.id}`"
               class="toc-link toc-sublink"
+              role="link"
             > {{ sublink.text }}</a>
           </li>
         </ul>
