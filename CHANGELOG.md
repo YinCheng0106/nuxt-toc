@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v2.6.4
+
+[compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v2.6.3...v2.6.4)
+
+### 📖 Documentation
+
+- Update notes on default styles ([e4c45a9](https://github.com/hanyujie2002/nuxt-toc/commit/e4c45a9))
+
+### ❤️ Contributors
+
+- Hanyujie2002 ([@hanyujie2002](http://github.com/hanyujie2002))
+
 ## v2.6.3
 
 [compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v2.6.2...v2.6.3)
