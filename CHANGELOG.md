@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v2.6.6
+
+[compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v2.6.5...v2.6.6)
+
+### 📖 Documentation
+
+- Simplified an example ([1e4ba00](https://github.com/hanyujie2002/nuxt-toc/commit/1e4ba00))
+
+### ❤️ Contributors
+
+- Hanyujie2002 ([@hanyujie2002](http://github.com/hanyujie2002))
+
 ## v2.6.5
 
 [compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v2.6.4...v2.6.5)
