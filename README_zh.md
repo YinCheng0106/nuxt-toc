@@ -80,17 +80,41 @@ npx nuxi module add nuxt-toc
 > .toc-sublist-item {
 >   padding-left: 1rem;
 > }
+>
+> a {
+>   text-decoration: none;
+>   color: inherit;
+> }
+>
+> ul,
+> ol {
+>   list-style: none;
+>   padding: 0;
+>   margin: 0;
+> }
 > ```
 >
 > 你可以自定义样式或重置样式：
 >
 > ```css
 > .active-toc-item {
->   color: inherit;
+>   color: initial;
 > }
 >
 > .toc-sublist-item {
->   padding-left: 0;
+>   padding-left: initial;
+> }
+>
+> a {
+>   text-decoration: underline;
+>   color: initial;
+> }
+>
+> ul,
+> ol {
+>   list-style: initial;
+>   padding: initial;
+>   margin: initial;
 > }
 > ```
 
