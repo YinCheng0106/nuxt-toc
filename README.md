@@ -25,6 +25,8 @@ A Nuxt module for table of contents (TOC) component in your Nuxt Content project
 - 🔍 **Active TOC Highlighting**: Easily see which section you're in.
 - 📦 **Out of the Box**: Ready to use with minimal setup.
 - 🔗 **Section Links**: Navigate seamlessly within your content.
+- ♿ **ARIA Support**: Ensures accessibility for all users.
+- 🆓 **Free and Open Source (MIT License)**: Enjoy the freedom to use, modify, and distribute.
 
 ## Quick Start 🔧
 
