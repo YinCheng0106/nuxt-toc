@@ -28,7 +28,7 @@
           class="toc-item toc-topitem"
           :class="{ 'active-toc-item active-toc-topitem': activeTocIds.has(link.id) || link.id === lastVisibleHeading }"
           role="heading"
-          arai-level="3"
+          aria-level="3"
         >
           <a
             :href="`#${link.id}`"
