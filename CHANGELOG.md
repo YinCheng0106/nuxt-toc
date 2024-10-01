@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v2.6.7
+
+[compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v2.6.6...v2.6.7)
+
+### 🩹 Fixes
+
+- Typo mistake ([8cdc9eb](https://github.com/hanyujie2002/nuxt-toc/commit/8cdc9eb))
+
+### ❤️ Contributors
+
+- Hanyujie2002 ([@hanyujie2002](http://github.com/hanyujie2002))
+
 ## v2.6.6
 
 [compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v2.6.5...v2.6.6)
