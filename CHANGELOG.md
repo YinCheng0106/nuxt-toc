@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v2.7.1
+
+[compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v2.7.0...v2.7.1)
+
+### 📖 Documentation
+
+- Updated README ([fdeccc1](https://github.com/hanyujie2002/nuxt-toc/commit/fdeccc1))
+
+### ❤️ Contributors
+
+- Hanyujie2002 ([@hanyujie2002](http://github.com/hanyujie2002))
+
 ## v2.7.0
 
 [compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v2.6.7...v2.7.0)
