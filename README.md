@@ -30,13 +30,13 @@ A Nuxt module for table of contents (TOC) component in your Nuxt Content project
 
 ## Quick Start 🔧
 
-1. Install the module to your Nuxt application with one command:
+1. Install the module to your Nuxt application:
 
 ```bash
 npx nuxi module add nuxt-toc
 ```
 
-2. Add `<TableOfContents />` at where TOC is needed.
+2. Add `<TableOfContents />` at where you need the TOC.
 
 ```vue
 <template>
@@ -45,11 +45,27 @@ npx nuxi module add nuxt-toc
 </template>
 ```
 
+You can also pass in TOC yourself to prevent duplicate fetching.
+
+```vue
+<template>
+    <ContentRenderer :value="data" />
+    <TableOfContents :toc="data.body.toc" />
+</template>
+
+<script setup>
+const route = useRoute()
+
+const { data } = await useAsyncData('home', () => queryContent(route.path).findOne())
+</script>
+```
+
 ## Props
 
 | **Prop**           | **Type** | **Default** | **Description**                                                                                     |
 |--------------------|----------|-------------|-----------------------------------------------------------------------------------------------------|
-| `path`             | String   | `''`        | The path to the content for which the TOC is generated. **If not set, `nuxt-toc` will default to using the current URI as the path**.                                    |
+| `toc`                  | JSON | `null`              | Use the provided `toc` data. **If `toc` is passed in, this component will not fetch TOC info itself and `path` prop will be ignored**.|
+| `path`             | String   | `''`        | The path to the content for which the TOC is generated. **Defaults to using the current URI if not set**.                                    |
 | `isSublistShown`   | Boolean  | `true`      | Determines whether the sublist within the TOC is shown.                                             |
 | `isTitleShownWithNoContent` | Boolean  | `false`     | Determines whether the title is shown even if there is no content in the TOC.                                  |
 | `title`            | String   | `'Table of Contents'` | The title of the TOC.                                                                               |

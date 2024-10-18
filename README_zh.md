@@ -41,10 +41,25 @@ npx nuxi module add nuxt-toc
 </template>
 ```
 
+也可以传入 TOC 以防止重复请求 TOC 信息：
+
+```vue
+<template>
+  <ContentRenderer :value="data" />
+  <TableOfContents :toc="data.body.toc" />
+</template>
+
+<script setup>
+const route = useRoute();
+const { data } = await useAsyncData('home', () => queryContent(route.path).findOne());
+</script>
+```
+
 ## 属性
 
 | **属性**           | **类型** | **默认值** | **描述**                                                                                     |
 |--------------------|----------|-------------|-----------------------------------------------------------------------------------------------------|
+|`toc`|JSON|`null`| 使用提供的 toc 数据。**如果传入 toc，该组件将不会自行请求 TOC 信息，并且 `path` 属性将无效。**
 | `path`             | String   | `''`        | 生成目录的内容路径。**如果未设置，`nuxt-toc` 将默认使用当前 URI 作为路径**。                                    |
 | `isSublistShown`   | Boolean  | `true`      | 决定是否显示目录中的子列表。                                             |
 | `isTitleShownWithNoContent` | Boolean  | `false`     | 决定在目录中没有内容的情况下是否显示标题。                                  |
