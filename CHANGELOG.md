@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v2.7.2
+
+[compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v2.7.1...v2.7.2)
+
+### 🏡 Chore
+
+- Clean unused code ([9aa9419](https://github.com/hanyujie2002/nuxt-toc/commit/9aa9419))
+
+### ❤️ Contributors
+
+- Hanyujie2002 ([@hanyujie2002](http://github.com/hanyujie2002))
+
 ## v2.7.1
 
 [compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v2.7.0...v2.7.1)
