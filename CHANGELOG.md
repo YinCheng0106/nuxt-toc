@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v2.7.0
+
+[compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v2.6.7...v2.7.0)
+
+### 🚀 Enhancements
+
+- Implemented support for toc prop ([c68ca3b](https://github.com/hanyujie2002/nuxt-toc/commit/c68ca3b))
+
+### ❤️ Contributors
+
+- Hanyujie2002 ([@hanyujie2002](http://github.com/hanyujie2002))
+
 ## v2.6.7
 
 [compare changes](https://github.com/hanyujie2002/nuxt-toc/compare/v2.6.6...v2.6.7)
