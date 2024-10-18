@@ -1,5 +1,4 @@
 <template>
-  <!-- {{ props.toc }} -->
   <div v-if="toc">
     <span
       v-if="(toc && toc.links.length) || isTitleShownWithNoContent"
