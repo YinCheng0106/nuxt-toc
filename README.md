@@ -1,17 +1,16 @@
-[中文](./README_zh.md)
+> [!IMPORTANT]
+>
+> The released version of this module, v2.7.2, **is not compatible** with the current version of Nuxt Content, [@nuxt/content v3](https://content.nuxt.com/). To use this module, you must downgrade to [@nuxt/content v2.x.x](https://v2.content.nuxt.com/). The upgrade of this module to v3.0.0 to be compatible with @nuxt/content v3 is currently in active development.
 
-# nuxt-toc
+---
 
-[![npm version][npm-version-src]][npm-version-href]
-[![npm downloads][npm-downloads-src]][npm-downloads-href]
-[![License][license-src]][license-href]
-[![Nuxt][nuxt-src]][nuxt-href]
+**Languages:** [中文](./README_zh.md)
 
-<div align="center">
-  <img src="./logo.png" alt="logo" width="150">
-</div>
+# Table of Contents for @nuxt/content
 
-A Nuxt module for table of contents (TOC) component in your Nuxt Content projects.
+[![npm version][npm-version-src]][npm-version-href] [![npm downloads][npm-downloads-src]][npm-downloads-href] [![License][license-src]][license-href] [![Nuxt][nuxt-src]][nuxt-href]
+
+A module for the Nuxt module [@nuxt/content](https://content.nuxt.com/) to integrate a table of contents component inside your Nuxt Content projects.
 
 
 
